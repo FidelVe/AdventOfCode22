@@ -7,6 +7,7 @@ const hPosition = [0, 0];
 let counter = 0;
 
 for (const move of input) {
+  console.log(move);
   const direction = move[0];
   const magnitude = Number(move[1]);
   if (Number.isNaN(magnitude)) {

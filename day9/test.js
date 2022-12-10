@@ -1,7 +1,7 @@
 const { calculatePosition } = require("./lib");
 
 const initPosition = ["0", "0"];
-const moves = [["U", "2"], ["d", 2], ["l", 2], ["r", 2]];
+const moves = [["U", "20"], ["d", 20], ["l", 201], ["r", 201]];
 
 // const newPosition = calculatePosition(moves[0], initPosition);
 // const newPosition2 = calculatePosition(moves[1], initPosition);

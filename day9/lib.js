@@ -14,6 +14,12 @@ const input = require("./input");
  * .....    .H...    .....    .T...
  * .....    .....    .H...    .H...
  *
+ * ..xx..
+ * ...xx.
+ * .xxxx.
+ * ....x.
+ * xxxx..
+ *
  * positions are described as an array of length 2
  * ie = ["3", "2"]
  * -3+3 -2+3 -1+3 +0+3 +1+3 +2+3 +3+3
@@ -24,10 +30,6 @@ const input = require("./input");
  * -3-2 -2-2 -1-2 +0-2 +1-2 +2-2 +3-2
  * -3-3 -2-3 -1-3 +0-3 +1-3 +2-3 +3-3
  */
-
-// function updatePathUsed(move, path) {
-//   const currentPosition = path[path.length - 1];
-// }
 
 function isHNextToT(hPosition, tPosition) {
   const hXCoord = Number(hPosition[0]);

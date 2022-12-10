@@ -83,14 +83,8 @@ function getNewTPosition(hPosition, tPosition, lastHPosition) {
   const tDoesntMove = isHNextToT(hPosition, tPosition);
   if (!tDoesntMove) {
     if (hXCoord === tXCoord || hYCoord === tYCoord) {
-      result[0] =
-        (hXCoord + tXCoord) / 2 === 0
-          ? hXCoord
-          : Math.ceil((hXCoord + tXCoord) / 2);
-      result[1] =
-        (hYCoord + tYCoord) / 2 === 0
-          ? hYCoord
-          : Math.ceil((hYCoord + tYCoord) / 2);
+      result[0] = Math.ceil((hXCoord + tXCoord) / 2);
+      result[1] = Math.ceil((hYCoord + tYCoord) / 2);
     } else {
       result[0] = hXCoordOld;
       result[1] = hYCoordOld;

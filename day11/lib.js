@@ -1,3 +1,4 @@
+const input = require("./input");
 /*
  * Class describing a thiving monkey
  * @param id {Number} - id of the monkey.
@@ -46,4 +47,63 @@ class Monkey {
   };
 }
 
-module.exports = { Monkey };
+const monkey0 = new Monkey(
+  input["0"].id,
+  input["0"].items,
+  input["0"].operation,
+  input["0"].test
+);
+const monkey1 = new Monkey(
+  input["1"].id,
+  input["1"].items,
+  input["1"].operation,
+  input["1"].test
+);
+const monkey2 = new Monkey(
+  input["2"].id,
+  input["2"].items,
+  input["2"].operation,
+  input["2"].test
+);
+const monkey3 = new Monkey(
+  input["3"].id,
+  input["3"].items,
+  input["3"].operation,
+  input["3"].test
+);
+const monkey4 = new Monkey(
+  input["4"].id,
+  input["4"].items,
+  input["4"].operation,
+  input["4"].test
+);
+const monkey5 = new Monkey(
+  input["5"].id,
+  input["5"].items,
+  input["5"].operation,
+  input["5"].test
+);
+const monkey6 = new Monkey(
+  input["6"].id,
+  input["6"].items,
+  input["6"].operation,
+  input["6"].test
+);
+const monkey7 = new Monkey(
+  input["7"].id,
+  input["7"].items,
+  input["7"].operation,
+  input["7"].test
+);
+
+const monkeys = [
+  monkey0,
+  monkey1,
+  monkey2,
+  monkey3,
+  monkey4,
+  monkey5,
+  monkey6,
+  monkey7
+];
+module.exports = { monkeys };

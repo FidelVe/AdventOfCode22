@@ -23,11 +23,7 @@ for (const move of input) {
     counter += 1;
     const lastTPosition = [...tRoute[tRoute.length - 1]];
     const newHPosition = calculatePosition([direction, 1], hPosition);
-    const newTPosition = getNewTPosition(
-      newHPosition,
-      lastTPosition,
-      hPosition
-    );
+    const newTPosition = getNewTPosition(newHPosition, lastTPosition);
     // console.log(`H moved from ${hPosition} to ${newHPosition}`);
     hPosition[0] = newHPosition[0];
     hPosition[1] = newHPosition[1];

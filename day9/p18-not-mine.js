@@ -61,4 +61,6 @@ const simulate = (moves, knots = 1) => {
   return Object.keys(tailed).length;
 };
 
-console.log(`Places tail visited (length 1): ${simulate(moves, 1)}`); // Part 1
+// console.log(`Places tail visited (length 1): ${simulate(moves, 1)}`); // Part 1
+
+console.log(`Places tail visited (length 9): ${simulate(moves, 9)}`); // Part 2
